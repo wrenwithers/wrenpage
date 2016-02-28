@@ -20,6 +20,7 @@ body {
 }
 
 #Main {
+  position: relative;
   width: 73.5vw;
   height: 100vh;
   margin: auto;
@@ -27,34 +28,54 @@ body {
   float: left;
   background-color: #D5CDFB;
   border-style: solid;
-  border: thick double #744054;
+  border-width: thin;
+  border-color: #744054;
 }
 
 #Nav ul {
   list-style-type: none;
+  background-color: #9D929D;
   font:16px 'bonvenocflight', normal;
-  border-style: inset;
-  border-width: thin;
+  font-weight: bold;
 }
 
 #Nav li {
   margin: auto 0 auto 9vw;
-  padding: 2em;
+  padding: 0 2em 0 2em;
   display: inline;
   text-align: center;
 }
 
-#Main h2 {
-  font:50px 'lemonchickenregular', normal;
-  color: #323232;
+#header {
+  position: absolute;
+  height: 20vh;
+  width: 30vw;
+  margin: 2vh 0 0 20vw;
+  border-radius: 10px;
+  padding: 0em 1em 1em 3em;
   text-align: center;
+  font:1em 'lemonchickenregular', normal;
+  color: #FFFFFF;
+  text-shadow: 1px 1px #000;
+  border: thin solid #FFFFFF;
+  background-color: #9D929D;
+  -webkit-box-shadow: 2px 4px 31px -2px rgba(95,95,95,1);
+-moz-box-shadow: 2px 4px 31px -2px rgba(95,95,95,1);
+box-shadow: 2px 4px 31px -2px rgba(95,95,95,1);
+}
+
+.big {
+  color: #7A8B9F;
+  text-shadow: 1px 1px #000;
+  font-size: 2em;
 }
 
 #pfont {
-  font:20px 'bonvenocflight', normal;
+  padding: 0em 1em 0em 1em;
+  margin-top: 16em;
+  font:18px 'bonvenocflight', normal;
   text-align: center;
-  border-style: inset;
-  border-width: thin;
+  font-weight: bold;
 
 }
 
@@ -72,6 +93,7 @@ body {
 
 #Box1 {
   background-color: #9D929D;
+  opacity: .9;
   margin: 0em 0em 1em 75%;
   font:16px 'bonvenocflight', normal;
   border-style: solid;
@@ -80,14 +102,17 @@ body {
 }
 
 #Box1 p {
-  padding: .5em .5em 1em .5em;
+  padding: 4em .5em 1em .5em;
+  text-align: center;
+  font-weight: bold;
 }
 
 #Box2 {
   background-color: #744054;
+  opacity: .9;
   margin: 1em 0em 0em 75%;
   border-style: solid;
-  border-color: #9D929D;
+  border-color: #964D81;
   border-width: thin;
 }
 
@@ -115,6 +140,7 @@ body {
 #Caption {
   position: absolute;
   font:16px 'bonvenocflight', normal;
+  font-weight: bold;
   margin: 15px 0px 20px 100px;
   }
 
@@ -162,10 +188,28 @@ body {
     padding: 2em;
   }
 
-  #Main h2 {
-    font:50px 'lemonchickenregular', normal;
-    color: #323232;
+  #header {
+    position: absolute;
+    height: 20vh;
+    width: 35vw;
+    margin: 8vh 0 0 30vw;
+    border-radius: 10px;
+    padding: 0em 1em 1em 1em;
     text-align: center;
+    font:1em 'lemonchickenregular', normal;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #000;
+    border: thin solid #FFFFFF;
+    background-color: #9D929D;
+    -webkit-box-shadow: 2px 4px 31px -2px rgba(95,95,95,1);
+  -moz-box-shadow: 2px 4px 31px -2px rgba(95,95,95,1);
+  box-shadow: 2px 4px 31px -2px rgba(95,95,95,1);
+  }
+
+  .big {
+    color: #7A8B9F;
+    text-shadow: 1px 1px #000;
+    font-size: 2em;
   }
 
   #pfont {
@@ -185,7 +229,7 @@ body {
 
   .box {
     width: 48.5%;
-    height: 48.5%;
+    height: 40vh;
     padding: 1em;
     display: inline-block;
   }
@@ -230,7 +274,7 @@ body {
   }
 }
 
-@media only screen and (max-width:1199px)
+@media only screen and (max-width:999px)
 {
 
 *,
@@ -277,13 +321,24 @@ body {
   padding: 1em;
 }
 
-
-
-#Main h2 {
-  font:50px 'lemonchickenregular', normal;
-  color: #323232;
+#header {
+  position: absolute;
+  height: 15vh;
+  width: 30vw;
+  margin: 2vh 0 0 66.5vw;
+  padding: 0em 1em 1em 3em;
   text-align: center;
-  margin-top: 1.25em;
+  font:.75em 'lemonchickenregular', normal;
+  color: #FFFFFF;
+  text-shadow: 1px 1px #000;
+  /*border: thin solid #FFFFFF;
+  background-color: #9D929D;*/
+}
+
+.big {
+  color: #7A8B9F;
+  text-shadow: 1px 1px #000;
+  font-size: 1.5em;
 }
 
 #pfont {
@@ -324,7 +379,6 @@ body {
   background-color: #744054;
 }
 
-
 .circular {
   position: relative;
   width: 200px;
@@ -348,7 +402,7 @@ body {
   }
 }
 
-@media only screen and (max-width:899px and min-width:399px)
+/*@media only screen and (max-width:899px and min-width:399px)
 {
   *,
   *::before,
@@ -467,4 +521,4 @@ body {
 
     }
 
-}
+}*/
